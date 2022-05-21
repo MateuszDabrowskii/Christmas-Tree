@@ -25,7 +25,7 @@ func (c *Choinka) rysujZnaki(znak string) {
 func (c *Choinka) rysuj() {
 	for ; c.i < c.h; c.i++ {
 		c.gwiazdki += "\n"
-		c.rysujZnaki("|")
+		c.rysujZnaki(" ")
 		for k := 0; k < 2*c.i+1; k++ {
 			if (k+c.s+c.i)%c.h == 1 {
 				c.gwiazdki += "0"
@@ -38,7 +38,7 @@ func (c *Choinka) rysuj() {
 			}
 
 		}
-		c.rysujZnaki("|")
+		c.rysujZnaki(" ")
 	}
 	c.print()
 }
